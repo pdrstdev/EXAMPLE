@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Page</title>
+<iframe src="MAIN PAGE.html" frameborder="0"></iframe>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .loader {
+    font-size: 48px;
+    color: #ff69b4; /* Pink color */
+    animation: rotate 2s linear infinite, scale 1s ease-in-out infinite alternate; /* Add animations */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="loader" id="loader">🌼</div>
+
+<script>
+// Hide the loader after a delay
+setTimeout(function() {
+  document.getElementById("loader").style.display = "none";
+}, 3000); // Adjust the delay time in milliseconds (e.g., 3000 for 3 seconds)
+</script>
+
+<!-- Your main page content goes here -->
+
+</body>
+</html>
