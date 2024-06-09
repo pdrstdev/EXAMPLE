@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy Cosmetics</title>
+    <link rel="icon" type="image/x-icon" href="daisy.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--ANNOUNCEMENT BAR-->
+    <style>
+        .announcement-bar {
+            background-color: #FFE7E7; /* Light red background */
+            color: #721c24; /* Dark red text */
+            text-align: center;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker-animation 20s linear infinite;
+            animation-play-state: running; /* Ensure animation is running by default */
+        }
+        @keyframes ticker-animation {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .top-bar-divider {
+            display: inline-block;
+            margin: 0 15px;
+            color: #721c24; /* Match text color */
+        }
+    </style>
+</head>
+<body>
+    <div id="shopify-section-sections--19965474079023__announcement-bar" class="shopify-section shopify-section-group-group-header announcement-bar-static">
+        <div data-announcement-bar="" class="announcement-bar">
+            <div class="ticker" data-clone data-slide style="animation-play-state: running;">
+                <span>Free shipping on orders over P100!</span>
+                <span class="top-bar-divider">|</span>
+                <span>Exclusive 5% discount on all products from the Daisy Collection for a limited time only.!</span>
+                <span class="top-bar-divider">|</span>
+                <span>Exclusive discounts available now!</span>
+                <span class="top-bar-divider">| So Check it out!</span>
+                <span>!</span>
+            </div>
+        </div>
+    </div>
+    <!-- END OF ANNOUNCEMENT BAR-->
+    <style>
+        .navbar-brand {
+            font-family: Arial, Georgia, 'Times New Roman', Times, serif; /* Choose your desired font family */
+            font-size: 24px; /* Adjust the font size as needed */
+            font-weight: bold; /* Apply bold font weight if desired */
+            color: #333; /* Set the color of the text */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Daisy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a href="B-Product.html">B-Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Packages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--homepage-->
+<div class="home">
+    <div class="content" data-aos="zoom-out-right">
+        <h3>Daisy
+            <br>Cosmetics
+        </h3>
+        <p>Confidence is the best
+            <br>makeup you can wear.
+        </p>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <div class="img"  data-aos="zoom-out-left">
+        <img src="./image/background.png" alt="">
+    </div>
+</div>
+<style>
+    /* home section */
+.home{
+    width: 100%;
+    height: 45.8vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(homeimage.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: rgb(250, 250, 250);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #573818;
+    color: white;
+}
+/* home section end */
+</style>
+<!-- banner -->
+<div class="banner" data-aos="fade-up" data-aos-duration="1500">
+    <div class="content">
+        <h3>MICA</h3>
+        <h2>UPTO 50% OFF</h2>
+        <p>Lip gloss is the cherry on top of your beauty routine.</p>
+        <div id="btnorder"><button>Checkit Out</button></div>
+    </div>
+    <div class="img">
+        <img src="./image/banner-background.png" alt="">
+    </div>
+</div>
+<!-- banner end -->
+<style>
+    /* banner */
+    .banner {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(ban.jpg);
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 10px black;
+        margin-top: 50px;
+        transition: background 0.3s ease;
+    }
+    .banner .img {
+        flex: 1 1 400px;
+    }
+    .banner .img img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+    .banner .content {
+        flex: 1 1 400px;
+        margin-left: 60px;
+        margin-top: 60px;
+        transition: transform 0.3s ease;
+    }
+    .banner .content h3 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .banner .content h2 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        transition: color 0.3s ease;
+    }
+    .banner .content p {
+        color: rgb(255, 255, 255);
+        transition: color 0.3s ease;
+    }
+    #btnorder button {
+        width: 150px;
+        height: 32px;
+        letter-spacing: 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(161, 109,14,1);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    #btnorder button:hover {
+        background-color: #d9a645;
+        transform: scale(1.1);
+    }
+    .banner:hover {
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(ban.jpg);
+    }
+    .banner .img:hover img {
+        transform: scale(1.05);
+    }
+    .banner .content:hover {
+        transform: translateY(-10px);
+    }
+    .banner .content h3:hover,
+    .banner .content h2:hover,
+    .banner .content p:hover {
+        color: #d9a645;
+    }
+    @media screen and (max-width:800px) {
+        .banner .content h3 {
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width:855px) {
+        .banner {
+            height: 100vh;
+        }
+    }
+    /* banner end */
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
